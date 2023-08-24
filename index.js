@@ -24,22 +24,26 @@ function closeNav() {
   closeBtn.style.color = "white";
 }
 // new function //
-/*
+
 var slidePosition = 0;
 SlideShow();
 
 function SlideShow() {
   var i;
   var slides = document.getElementsByClassName("slide");
+  var circles = document.getElementsByClassName("dots");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    circles[i].className = circles[i].className.replace(" enable", "");
   }
   slidePosition++;
   if (slidePosition > slides.length) {slidePosition = 1}
   slides[slidePosition-1].style.display = "block";
-  setTimeout(SlideShow, 15000); // Change image every 2 seconds
-} */
+  setTimeout(SlideShow, 3000); // Change image every 2 seconds
+  circles[slidePosition-1].className += " enable";
+} 
 
+/*
 var slidePosition = 1;
 SlideShow(slidePosition);
 
@@ -73,4 +77,4 @@ function SlideShow(n) {
   circles[slidePosition-1].className += " enable";
  
   
-} 
+} */
