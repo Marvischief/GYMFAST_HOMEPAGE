@@ -6,7 +6,7 @@
 
 body {
   background-color: #1e1e1e;
-  font-family: cursive;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .nav-menu a:hover {
