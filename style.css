@@ -577,7 +577,7 @@ footer button {
     position: relative;
     width: 100%;
     height: auto;
-    background-color: green;
+    background-color: transparent;
     overflow: hidden;
   }
 
